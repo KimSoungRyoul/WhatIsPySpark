@@ -6,7 +6,8 @@ authors = ["soungryoul-kim <soungryoul.kim>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pyspark = "^3.3.0"
+pyspark = {extras = ["pandas_on_spark", "sql"], version = "^3.3.0"}
+jupyter = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 
